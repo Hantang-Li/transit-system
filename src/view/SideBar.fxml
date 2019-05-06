@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" prefHeight="600.0" prefWidth="800.0"
+  style="-fx-background-color: #2A2E37;" stylesheets="@ButtonHover.css"
+  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="controller.AccountBarController">
+  <bottom>
+    <AnchorPane prefHeight="49.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+      <children>
+        <JFXButton layoutY="2.0" onMouseClicked="#clickLogOut" prefHeight="46.0" prefWidth="116.0"
+          text="Log Out" textFill="#ffff8d">
+          <font>
+            <Font size="20.0"/>
+          </font>
+        </JFXButton>
+      </children>
+    </AnchorPane>
+  </bottom>
+  <center>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER"/>
+  </center>
+  <left>
+    <AnchorPane prefHeight="562.0" prefWidth="193.0" BorderPane.alignment="CENTER">
+      <children>
+        <JFXButton layoutX="1.0" onMouseClicked="#clickAccountProfile" prefHeight="70.0"
+          prefWidth="193.0" stylesheets="@ButtonHover.css" text="Account Profile" textFill="WHITE">
+          <font>
+            <Font size="19.0"/>
+          </font>
+        </JFXButton>
+        <JFXButton layoutX="1.0" layoutY="228.0" onMouseClicked="#clickManageCard" prefHeight="70.0"
+          prefWidth="193.0" stylesheets="@ButtonHover.css" text="Manage My Card" textFill="WHITE">
+          <font>
+            <Font size="19.0"/>
+          </font>
+        </JFXButton>
+        <JFXButton layoutX="1.0" layoutY="304.0" onMouseClicked="#clickCardActivity"
+          prefHeight="70.0" prefWidth="193.0" stylesheets="@ButtonHover.css" text="Card Activity"
+          textFill="WHITE">
+          <font>
+            <Font size="19.0"/>
+          </font>
+        </JFXButton>
+        <JFXButton layoutX="1.0" layoutY="76.0" onMouseClicked="#clickLoadMyCard" prefHeight="70.0"
+          prefWidth="193.0" stylesheets="@ButtonHover.css" text="Load My Card" textFill="WHITE">
+          <font>
+            <Font size="19.0"/>
+          </font>
+        </JFXButton>
+        <JFXButton fx:id="addCardButton" layoutX="1.0" layoutY="152.0"
+          onMouseClicked="#clickApplyCard" prefHeight="70.0" prefWidth="193.0"
+          stylesheets="@ButtonHover.css" text="Apply New Card" textFill="WHITE">
+          <font>
+            <Font size="19.0"/>
+          </font>
+        </JFXButton>
+        <JFXButton layoutX="47.0" layoutY="492.0" onMouseClicked="#clickContactUs"
+          stylesheets="@Hyperlink.css" text="Contact Us" textFill="#5eb1ff">
+          <font>
+            <Font size="15.0"/>
+          </font>
+        </JFXButton>
+        <JFXButton layoutX="1.0" layoutY="380.0" onMouseClicked="#clickAccountActivity"
+          prefHeight="70.0" prefWidth="193.0" stylesheets="@ButtonHover.css" text="Account Activity"
+          textFill="WHITE">
+          <font>
+            <Font size="19.0"/>
+          </font>
+        </JFXButton>
+      </children>
+    </AnchorPane>
+  </left>
+</BorderPane>

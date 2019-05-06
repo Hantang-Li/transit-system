@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+  prefHeight="210.0" prefWidth="510.0" style="-fx-background-color: #2A2E37;"
+  stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="controller.UnbindAlertController">
+  <children>
+    <JFXButton layoutX="125.0" layoutY="143.0" onMouseClicked="#clickYes" prefHeight="42.0"
+      prefWidth="94.0" style="-fx-border-color: #FFFF8D;" text="Yes" textFill="WHITE">
+      <font>
+        <Font size="15.0"/>
+      </font>
+    </JFXButton>
+    <Label fx:id="alertLabel" layoutX="86.0" layoutY="30.0" text="N/A" textFill="WHITE">
+      <font>
+        <Font size="20.0"/>
+      </font>
+    </Label>
+    <FontAwesomeIconView fill="#ffff8d" glyphName="EXCLAMATION_CIRCLE" layoutX="28.0" layoutY="60.0"
+      size="50"/>
+    <JFXButton layoutX="284.0" layoutY="143.0" onMouseClicked="#clickNo" prefHeight="41.0"
+      prefWidth="94.0" style="-fx-border-color: #FFFF8D;" text="No" textFill="WHITE">
+      <font>
+        <Font size="15.0"/>
+      </font>
+    </JFXButton>
+  </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+* {
+  -fx-primary: #2A2E37;
+  -fx-secondary: #5EB1FF;
+}
+
+.button {
+  -fx-text-fill: -fx-secondary;
+  -fx-background-color: -fx-primary;
+  -fx-border-color: -fx-primary;
+}
+
+.button:hover, .button:focused {
+  -fx-border-color: -fx-primary;
+  -fx-background-color: -fx-primary;
+  -fx-text-fill: -fx-secondary;
+}

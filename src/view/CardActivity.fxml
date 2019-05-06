@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="cardActivityPane" maxHeight="-Infinity" maxWidth="-Infinity"
+  minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="607.0"
+  style="-fx-background-color: #2A2E37;" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8"
+  xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CardActivityController">
+  <children>
+    <JFXButton layoutX="458.0" layoutY="26.0" onMouseClicked="#clickConfirm" prefHeight="43.0"
+      prefWidth="125.0" ripplerFill="#ffff8d" style="-fx-border-color: #ffff8d;" text="Confirm"
+      textFill="WHITE"/>
+    <Label layoutX="32.0" layoutY="32.0" text="Please choose a card" textFill="WHITE">
+      <font>
+        <Font size="25.0"/>
+      </font>
+    </Label>
+    <MenuButton fx:id="cardMenuButton" ellipsisString="" layoutX="317.0" layoutY="32.0"
+      mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0">
+      <font>
+        <Font size="15.0"/>
+      </font>
+      <items>
+        <MenuItem mnemonicParsing="false" text="Action 1"/>
+        <MenuItem mnemonicParsing="false" text="Action 2"/>
+      </items>
+    </MenuButton>
+    <ScrollPane layoutY="87.0" prefHeight="461.0" prefWidth="607.0"
+      style="-fx-background-color: #2A2E37;">
+      <content>
+        <Label fx:id="text1" alignment="TOP_LEFT" ellipsisString="" prefHeight="292.0"
+          prefWidth="560.0" textFill="WHITE">
+          <font>
+            <Font size="20.0"/>
+          </font>
+        </Label>
+      </content>
+    </ScrollPane>
+  </children>
+</AnchorPane>

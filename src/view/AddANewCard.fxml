@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="applyCardPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+  minWidth="-Infinity" prefHeight="551.0" prefWidth="607.0" style="-fx-background-color: #2A2E37;"
+  stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="controller.ApplyCardController">
+  <children>
+    <Label layoutX="135.0" layoutY="50.0" text="Please Select a Transit Pass: " textFill="WHITE">
+      <font>
+        <Font size="26.0"/>
+      </font>
+    </Label>
+    <JFXButton fx:id="Traffic_Card" contentDisplay="TOP" layoutX="7.0" layoutY="151.0"
+      mnemonicParsing="false" prefHeight="125.0" prefWidth="192.0" ripplerFill="#2a2e37"
+      text="Traffic Card" textAlignment="CENTER" textFill="WHITE">
+      <graphic>
+        <FontAwesomeIconView fill="WHITE" glyphName="CREDIT_CARD" size="25"/>
+      </graphic>
+      <font>
+        <Font size="16.0"/>
+      </font>
+      <tooltip>
+        <Tooltip prefWidth="200.0"
+          text="The Common Pass has initially $19 inside. Each bus ride costs $2, and subway rides cost $0.50 for every subway station."
+          wrapText="true"/>
+      </tooltip>
+    </JFXButton>
+    <JFXButton fx:id="Times_Pass" contentDisplay="TOP" layoutX="207.0" layoutY="151.0"
+      mnemonicParsing="false" prefHeight="125.0" prefWidth="192.0" ripplerFill="#2a2e37"
+      text="10 Times Pass" textAlignment="CENTER" textFill="WHITE">
+      <font>
+        <Font size="16.0"/>
+      </font>
+      <graphic>
+        <FontAwesomeIconView fill="WHITE" glyphName="CREDIT_CARD" size="25"/>
+      </graphic>
+      <tooltip>
+        <Tooltip prefWidth="200.0" text="The 10 Times Pass allows you to take 10 rides for free."
+          wrapText="true"/>
+      </tooltip>
+    </JFXButton>
+    <JFXButton fx:id="Weekly_Pass" contentDisplay="TOP" layoutX="408.0" layoutY="151.0"
+      mnemonicParsing="false" prefHeight="125.0" prefWidth="192.0" ripplerFill="#2a2e37"
+      text="Weekly Pass" textAlignment="CENTER" textFill="WHITE">
+      <font>
+        <Font size="16.0"/>
+      </font>
+      <graphic>
+        <FontAwesomeIconView fill="WHITE" glyphName="CREDIT_CARD" size="25"/>
+      </graphic>
+      <tooltip>
+        <Tooltip prefWidth="200.0"
+          text="The Weekly Pass allows you to take infinite rides in one week for free."
+          wrapText="true"/>
+      </tooltip>
+    </JFXButton>
+    <JFXButton layoutX="220.0" layoutY="451.0" onMouseClicked="#checkOut" prefHeight="44.0"
+      prefWidth="167.0" style="-fx-border-color: #FFFF8D;" stylesheets="@Main.css" text="Check Out"
+      textFill="WHITE">
+      <font>
+        <Font size="16.0"/>
+      </font>
+    </JFXButton>
+  </children>
+</AnchorPane>

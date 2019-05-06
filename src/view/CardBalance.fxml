@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+  prefHeight="350.0" prefWidth="400.0" style="-fx-background-color: #2A2E37;"
+  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="controller.AlertController">
+  <children>
+    <JFXButton layoutX="154.0" layoutY="282.0" onMouseClicked="#clickGotIt" prefHeight="41.0"
+      prefWidth="94.0" style="-fx-border-color: #FFFF8D;" stylesheets="@Main.css" text="Got it"
+      textFill="WHITE">
+      <font>
+        <Font size="15.0"/>
+      </font>
+    </JFXButton>
+    <FontAwesomeIconView fill="#ffff8d" glyphName="CREDIT_CARD" layoutX="158.0" layoutY="83.0"
+      size="80"/>
+    <Label fx:id="alertLabel" layoutX="34.0" layoutY="102.0" prefHeight="166.0" prefWidth="333.0"
+      textFill="WHITE">
+      <font>
+        <Font size="25.0"/>
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

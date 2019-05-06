@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="loadCardPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+  minWidth="-Infinity" prefHeight="551.0" prefWidth="607.0" style="-fx-background-color: #2A2E37;"
+  stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="controller.LoadMyCardController">
+  <children>
+    <Label layoutX="23.0" layoutY="170.0" text="Step 1: Please choose a card" textFill="WHITE">
+      <font>
+        <Font size="23.0"/>
+      </font>
+    </Label>
+    <MenuButton fx:id="cardMenuButton" layoutX="364.0" layoutY="170.0" mnemonicParsing="false"
+      prefHeight="27.0" prefWidth="100.0"/>
+    <Label layoutX="23.0" layoutY="248.0" text="Step 2: Please select amount of funds"
+      textFill="WHITE">
+      <font>
+        <Font size="23.0"/>
+      </font>
+    </Label>
+    <MenuButton fx:id="fundMenuButton" layoutX="463.0" layoutY="249.0" mnemonicParsing="false"
+      prefHeight="27.0" prefWidth="123.0">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Action 1"/>
+        <MenuItem mnemonicParsing="false" text="Action 2"/>
+      </items>
+    </MenuButton>
+    <JFXButton layoutX="226.0" layoutY="333.0" onMouseClicked="#checkOut" prefHeight="42.0"
+      prefWidth="156.0" ripplerFill="#ffff8d" text="Check out" textFill="WHITE"/>
+  </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+
+<ScrollPane fx:id="accountActivityPane" maxHeight="-Infinity" maxWidth="-Infinity"
+  minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="607.0"
+  style="-fx-background-color: #2A2E37;" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8"
+  xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AccountActivityController">
+  <content>
+    <Label fx:id="accountActivityLabel" prefHeight="540.0" prefWidth="545.0" textFill="WHITE">
+      <font>
+        <Font size="20.0"/>
+      </font>
+    </Label>
+  </content>
+</ScrollPane>

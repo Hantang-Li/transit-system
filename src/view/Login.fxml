@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+  minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@Main.css"
+  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="controller.LoginController">
+  <children>
+    <JFXTabPane prefHeight="430.0" prefWidth="600.0" stylesheets="@Main.css">
+      <tabs>
+        <Tab text="Start A Trip">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"
+              style="-fx-background-color: #2A2E37;">
+              <children>
+                <JFXTextField fx:id="cardIdTextField" focusColor="#ffff8d" layoutX="313.0"
+                  layoutY="179.0" prefHeight="27.0" prefWidth="199.0"
+                  promptText="Type in your card id" stylesheets="@Main.css" unFocusColor="#ffff8d">
+                  <font>
+                    <Font size="15.0"/>
+                  </font>
+                </JFXTextField>
+                <JFXButton fx:id="chooseCard" layoutX="312.0" layoutY="230.0"
+                  onMouseClicked="#chooseCard" prefHeight="36.0" prefWidth="201.0"
+                  text="Select the Card" textFill="WHITE"/>
+                <FontAwesomeIconView fill="WHITE" glyphName="CREDIT_CARD" layoutX="282.0"
+                  layoutY="207.0" size="25"/>
+                <Label layoutX="331.0" layoutY="473.0" text="Don't have a card? " textFill="WHITE">
+                  <font>
+                    <Font size="18.0"/>
+                  </font>
+                </Label>
+                <Label layoutX="313.0" layoutY="159.0" text="Card ID" textFill="WHITE">
+                  <font>
+                    <Font size="16.0"/>
+                  </font>
+                </Label>
+                <JFXButton layoutX="315.0" layoutY="494.0" onMouseClicked="#applyCard"
+                  prefHeight="42.0" prefWidth="196.0" stylesheets="@Hyperlink.css"
+                  text="Apply now!!!"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Account Login">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"
+              style="-fx-background-color: #2A2E37;">
+              <children>
+                <JFXTextField fx:id="emailTextField" focusColor="#ffff8d" labelFloat="true"
+                  layoutX="325.0" layoutY="170.0" prefHeight="27.0" prefWidth="206.0"
+                  promptText="Email Adddress" unFocusColor="#ffff8d"/>
+                <JFXPasswordField fx:id="passwordTextField" focusColor="#ffff8d" labelFloat="true"
+                  layoutX="322.0" layoutY="238.0" prefHeight="27.0" prefWidth="205.0"
+                  promptText="Password" unFocusColor="#ffff8d"/>
+                <FontAwesomeIconView fill="WHITE" glyphName="ENVELOPE_ALT" layoutX="297.0"
+                  layoutY="204.0" size="25"/>
+                <FontAwesomeIconView fill="WHITE" glyphName="LOCK" layoutX="300.0" layoutY="276.0"
+                  size="25"/>
+                <JFXButton fx:id="loginAccount" layoutX="321.0" layoutY="303.0"
+                  onMouseClicked="#loginAccount" prefHeight="36.0" prefWidth="100.0" text="Login"
+                  textFill="WHITE"/>
+                <JFXButton fx:id="clickCancel" layoutX="435.0" layoutY="303.0"
+                  onMouseClicked="#clickCancel" prefHeight="36.0" prefWidth="100.0" text="Cancel"
+                  textFill="WHITE"/>
+                <JFXButton layoutX="321.0" layoutY="485.0" onMouseClicked="#clickCreateAccount"
+                  stylesheets="@Hyperlink.css" text="Create an account"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </JFXTabPane>
+  </children>
+  <opaqueInsets>
+    <Insets/>
+  </opaqueInsets>
+</StackPane>

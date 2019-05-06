@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+  prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #2A2E37;"
+  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="controller.AdminController">
+  <children>
+    <Label layoutX="36.0" layoutY="14.0" text="Hello, AdminUser" textFill="WHITE">
+      <font>
+        <Font size="40.0"/>
+      </font>
+    </Label>
+    <AnchorPane layoutX="56.0" layoutY="80.0" prefHeight="291.0" prefWidth="697.0"
+      style="-fx-border-color: #898989;">
+      <children>
+        <JFXButton layoutX="251.0" layoutY="228.0" onMouseClicked="#clickCloseSystem"
+          stylesheets="@Main.css" text="Close the System" textFill="WHITE"/>
+        <Label layoutX="11.0" layoutY="9.0" text="Open the Ststem" textFill="WHITE">
+          <font>
+            <Font size="30.0"/>
+          </font>
+        </Label>
+        <Label layoutX="17.0" layoutY="94.0" text="Please enter today's date" textFill="WHITE">
+          <font>
+            <Font size="20.0"/>
+          </font>
+        </Label>
+        <Label layoutX="17.0" layoutY="55.0" text="Last date system closed is: " textFill="WHITE">
+          <font>
+            <Font size="20.0"/>
+          </font>
+        </Label>
+        <Label fx:id="lastDateLabel" layoutX="279.0" layoutY="55.0" prefHeight="26.0"
+          prefWidth="149.0" text="N/A" textFill="WHITE">
+          <font>
+            <Font size="20.0"/>
+          </font>
+        </Label>
+        <JFXButton layoutX="252.0" layoutY="129.0" onMouseClicked="#clickOpenSystem"
+          stylesheets="@Main.css" text="Open the System" textFill="WHITE"/>
+        <Label layoutX="11.0" layoutY="183.0" text="Close the Ststem:" textFill="WHITE">
+          <font>
+            <Font size="30.0"/>
+          </font>
+        </Label>
+        <DatePicker fx:id="datePicker" layoutX="292.0" layoutY="93.0" prefHeight="27.0"
+          prefWidth="136.0"/>
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="56.0" layoutY="394.0" prefHeight="151.0" prefWidth="697.0"
+      style="-fx-border-color: #898989;">
+      <children>
+        <Label layoutX="11.0" layoutY="9.0" text="Generate Report" textFill="WHITE">
+          <font>
+            <Font size="30.0"/>
+          </font>
+        </Label>
+        <JFXButton layoutX="256.0" layoutY="93.0" onMouseClicked="#clickGenerateReport"
+          stylesheets="@Main.css" text="Generate Report" textFill="WHITE"/>
+        <DatePicker fx:id="reportDate" layoutX="418.0" layoutY="52.0" prefHeight="27.0"
+          prefWidth="136.0"/>
+        <Label layoutX="17.0" layoutY="52.0" text="Please enter the date you want to view"
+          textFill="WHITE">
+          <font>
+            <Font size="20.0"/>
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+    <JFXButton layoutX="8.0" layoutY="552.0" onMouseClicked="#clickLogOut" text="Log Out"
+      textFill="#ffff8d">
+      <font>
+        <Font size="20.0"/>
+      </font>
+    </JFXButton>
+  </children>
+</AnchorPane>

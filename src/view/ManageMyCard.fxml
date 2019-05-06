@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="manageCardPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+  minWidth="-Infinity" prefHeight="551.0" prefWidth="607.0" style="-fx-background-color: #2A2E37;"
+  stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="controller.ManageCardController">
+  <children>
+    <JFXButton layoutX="129.0" layoutY="390.0" onMouseClicked="#clickUnbindCard"
+      text="Unbind this card from my account" textFill="#ffff8d"/>
+    <Label layoutX="130.0" layoutY="170.0" text="Please select a card" textFill="WHITE">
+      <font>
+        <Font size="23.0"/>
+      </font>
+    </Label>
+    <MenuButton fx:id="menuButton" layoutX="375.0" layoutY="171.0" mnemonicParsing="false"
+      prefHeight="27.0" prefWidth="103.0" text="...">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Action 1"/>
+        <MenuItem mnemonicParsing="false" text="Action 2"/>
+      </items>
+    </MenuButton>
+    <JFXButton layoutX="205.0" layoutY="255.0" onMouseClicked="#clickSuspendCard"
+      text="Suspend the card" textFill="#ffff8d"/>
+    <JFXButton layoutX="209.0" layoutY="323.0" onMouseClicked="#clickActivateCard"
+      text="Activate the card" textFill="#ffff8d"/>
+  </children>
+</AnchorPane>

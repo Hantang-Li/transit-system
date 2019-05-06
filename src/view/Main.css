@@ -1,0 +1,82 @@
+/*
+The color code and button style is based on from:
+https://github.com/afsalashyana/Library-Assistant/blob/master/src/resources/dark-theme.css
+*/
+
+* {
+  -fx-primary: #2A2E37;
+  -fx-secondary: #FFFF8D;
+}
+
+.button {
+  -fx-text-fill: -fx-primarytext;
+  -fx-background-color: -fx-primary;
+  -fx-border-color: -fx-secondary;
+  -fx-border-radius: 20px;
+  -fx-background-radius: 20px;
+  -fx-font-size: 15pt;
+}
+
+.button:hover, .button:focused {
+  -fx-border-color: -fx-secondary;
+  -fx-background-color: -fx-secondary;
+  -fx-text-fill: -fx-primary;
+}
+
+.tab {
+  -fx-background-color: -fx-primary;
+  -fx-pref-width: 395;
+  -fx-pref-height: 50;
+}
+
+.tab-header-background {
+  -fx-background-color: -fx-primary;
+}
+
+.text-field {
+  -fx-text-fill: -fx-primarytext;
+  -fx-font-size: 15pt;
+  -jfx-focus-color: -fx-secondary;
+  -fx-text-fill: derive(-fx-secondary, 20%);
+}
+
+.menu-button {
+  -fx-background-color: -fx-secondary;
+}
+
+.menu-item .label {
+  -fx-text-fill: -fx-secondary;
+}
+
+.menu-item:focused {
+  -fx-background-color: -fx-secondary;
+}
+
+.menu-item:focused .label, .menu-item:hovered .label {
+  -fx-text-fill: fx-primary;
+}
+
+.context-menu {
+  -fx-background-color: -fx-primary;
+}
+
+.scroll-bar:vertical {
+  -fx-background-color: -fx-primary;
+}
+
+.scroll-bar:vertical .thumb {
+  -fx-background-color: -fx-secondary;
+}
+
+.scroll-bar:vertical .increment-button:hover,
+.scroll-bar:vertical .decrement-button:hover {
+  -fx-background-color: -fx-secondary;
+}
+
+.scroll-pane {
+  -fx-background: -fx-primary;
+}
+
+.scroll-pane > .corner {
+  -fx-background-color: -fx-primary;
+}

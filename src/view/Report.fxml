@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+  prefHeight="465.0" prefWidth="651.0" style="-fx-background-color: #2A2E37;"
+  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="controller.AdminController">
+  <children>
+    <ScrollPane prefHeight="462.0" prefWidth="651.0" style="-fx-background-color: #2A2E37;"
+      stylesheets="@Main.css">
+      <content>
+        <Label fx:id="reportLabel" prefHeight="450.0" prefWidth="645.0" textFill="WHITE"
+          wrapText="true">
+          <font>
+            <Font size="20.0"/>
+          </font>
+        </Label>
+      </content>
+    </ScrollPane>
+  </children>
+</VBox>
