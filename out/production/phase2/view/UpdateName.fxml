@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+  prefHeight="450.0" prefWidth="500.0" style="-fx-background-color: #2A2E37;"
+  stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="controller.AccountProfileController">
+  <children>
+    <FontAwesomeIconView fill="#ffff8d" glyphName="USER" layoutX="202.0" layoutY="117.0"
+      size="120"/>
+    <JFXTextField fx:id="newUserNameText" labelFloat="true" layoutX="86.0" layoutY="259.0"
+      prefHeight="40.0" prefWidth="328.0" promptText="Please enter your new user name"/>
+    <Label fx:id="userNameLabel" alignment="CENTER" layoutX="54.0" layoutY="181.0" prefHeight="28.0"
+      prefWidth="392.0" text="N/A" textFill="WHITE">
+      <font>
+        <Font size="22.0"/>
+      </font>
+    </Label>
+    <Label alignment="CENTER" layoutX="57.0" layoutY="147.0" prefHeight="28.0" prefWidth="386.0"
+      text="Your currrent user name is: " textFill="WHITE">
+      <font>
+        <Font size="22.0"/>
+      </font>
+    </Label>
+    <JFXButton layoutX="289.0" layoutY="378.0" onMouseClicked="#clickCancel" text="Cancel"
+      textFill="#ffff8d"/>
+    <JFXButton layoutX="117.0" layoutY="378.0" onMouseClicked="#updateName" text="Update"
+      textFill="#ffff8d"/>
+  </children>
+</AnchorPane>

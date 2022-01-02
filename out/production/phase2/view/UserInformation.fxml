@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #2A2E37;"
+  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="controller.CreateAccountController">
+  <children>
+    <Label layoutX="22.0" layoutY="14.0" text="User Information" textFill="WHITE">
+      <font>
+        <Font size="42.0"/>
+      </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" layoutX="224.0" layoutY="142.0" text="Username* : "
+      textFill="WHITE">
+      <font>
+        <Font size="34.0"/>
+      </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" layoutX="159.0" layoutY="210.0" text="Email Address* : "
+      textFill="WHITE">
+      <font>
+        <Font size="34.0"/>
+      </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" layoutX="240.0" layoutY="280.0" text="Password*: "
+      textFill="WHITE">
+      <font>
+        <Font size="34.0"/>
+      </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" layoutX="102.0" layoutY="350.0" text="Confirm Password*: "
+      textFill="WHITE">
+      <font>
+        <Font size="34.0"/>
+      </font>
+    </Label>
+    <JFXTextField fx:id="emailTextField" layoutX="440.0" layoutY="217.0" prefHeight="27.0"
+      prefWidth="212.0" stylesheets="@Main.css"/>
+    <JFXTextField fx:id="nameTextField" layoutX="440.0" layoutY="140.0" prefHeight="27.0"
+      prefWidth="212.0" stylesheets="@Main.css"/>
+    <JFXPasswordField fx:id="passwordField" layoutX="440.0" layoutY="281.0" prefHeight="27.0"
+      prefWidth="212.0" stylesheets="@Main.css"/>
+    <JFXPasswordField fx:id="confirmPasswordField" layoutX="440.0" layoutY="352.0" prefHeight="27.0"
+      prefWidth="212.0" stylesheets="@Main.css"/>
+    <JFXButton layoutX="207.0" layoutY="468.0" onMouseClicked="#clickCreateAccount"
+      stylesheets="@Main.css" text="Create My Account" textFill="WHITE"/>
+    <JFXButton layoutX="482.0" layoutY="470.0" onMouseClicked="#clickCancel" stylesheets="@Main.css"
+      text="Cancel" textFill="WHITE"/>
+    <JFXButton layoutX="2.0" layoutY="549.0" onMouseClicked="#clickBack" text="&lt; Back"
+      textFill="#ffff8d">
+      <font>
+        <Font size="25.0"/>
+      </font>
+    </JFXButton>
+  </children>
+</AnchorPane>

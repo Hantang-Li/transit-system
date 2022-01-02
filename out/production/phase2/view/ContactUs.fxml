@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+  prefHeight="350.0" prefWidth="450.0" style="-fx-background-color: #2A2E37;"
+  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="controller.AlertController">
+  <children>
+    <JFXButton layoutX="178.0" layoutY="290.0" onMouseClicked="#clickGotIt" prefHeight="41.0"
+      prefWidth="94.0" style="-fx-border-color: #FFFF8D;" stylesheets="@Main.css" text="Got it"
+      textFill="WHITE">
+      <font>
+        <Font size="15.0"/>
+      </font>
+    </JFXButton>
+    <FontAwesomeIconView fill="#ffff8d" glyphName="USERS" layoutX="177.0" layoutY="96.0" size="90"/>
+    <Label layoutX="89.0" layoutY="130.0" text="If you have any concerns, " textFill="WHITE">
+      <font>
+        <Font size="22.0"/>
+      </font>
+    </Label>
+    <Label layoutX="60.0" layoutY="174.0" text="please feel free to contact us at" textFill="WHITE">
+      <font>
+        <Font size="22.0"/>
+      </font>
+    </Label>
+    <Label layoutX="43.0" layoutY="218.0" text="s18.csc207.group0144@gmail.com" textFill="WHITE">
+      <font>
+        <Font size="22.0"/>
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

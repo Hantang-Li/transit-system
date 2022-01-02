@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+  prefHeight="350.0" prefWidth="400.0" style="-fx-background-color: #2A2E37;"
+  stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="controller.TapController">
+  <children>
+    <Label layoutX="19.0" layoutY="68.0" prefHeight="28.0" prefWidth="170.0" text="Enter location: "
+      textFill="WHITE">
+      <font>
+        <Font size="22.0"/>
+      </font>
+    </Label>
+    <JFXButton layoutX="153.0" layoutY="281.0" onMouseClicked="#clickTapIn" prefHeight="41.0"
+      prefWidth="94.0" style="-fx-border-color: #FFFF8D;" text="Tap in" textFill="WHITE">
+      <font>
+        <Font size="15.0"/>
+      </font>
+    </JFXButton>
+    <Label layoutX="19.0" layoutY="109.0" prefHeight="28.0" prefWidth="148.0" text="Your card id: "
+      textFill="WHITE">
+      <font>
+        <Font size="22.0"/>
+      </font>
+    </Label>
+    <Label layoutX="19.0" layoutY="197.0" prefHeight="28.0" prefWidth="148.0" text="Current time:"
+      textFill="WHITE">
+      <font>
+        <Font size="22.0"/>
+      </font>
+    </Label>
+    <Label layoutX="19.0" layoutY="152.0" prefHeight="28.0" prefWidth="148.0" text="Current date:"
+      textFill="WHITE">
+      <font>
+        <Font size="22.0"/>
+      </font>
+    </Label>
+    <JFXTextField fx:id="timeTextField" focusColor="#ffff8d" layoutX="166.0" layoutY="186.0"
+      prefHeight="40.0" prefWidth="94.0" unFocusColor="#ffff8d"/>
+    <Label layoutX="271.0" layoutY="199.0" prefHeight="24.0" prefWidth="83.0" text="(HH:mm)"
+      textFill="WHITE">
+      <font>
+        <Font size="16.0"/>
+      </font>
+    </Label>
+    <Label fx:id="locationLabel" layoutX="185.0" layoutY="68.0" text="N/A" textFill="WHITE">
+      <font>
+        <Font size="22.0"/>
+      </font>
+    </Label>
+    <Label fx:id="cardIdLabel" layoutX="168.0" layoutY="109.0" text="N/A" textFill="WHITE">
+      <font>
+        <Font size="22.0"/>
+      </font>
+    </Label>
+    <Label fx:id="dateLabel" layoutX="174.0" layoutY="152.0" text="N/A" textFill="WHITE">
+      <font>
+        <Font size="22.0"/>
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

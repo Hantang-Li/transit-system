@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="tripPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+  minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8"
+  xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TripController">
+  <children>
+    <BorderPane prefHeight="200.0" prefWidth="200.0">
+      <bottom>
+        <AnchorPane prefHeight="45.0" prefWidth="800.0" style="-fx-background-color: #2A2E37;"
+          BorderPane.alignment="CENTER">
+          <children>
+            <JFXButton layoutY="3.0" onMouseClicked="#clickBack" prefHeight="37.0" prefWidth="110.0"
+              ripplerFill="#ffff8d" style="-fx-background-color: #2A2E37;" text="&lt; Back"
+              textFill="WHITE">
+              <font>
+                <Font size="20.0"/>
+              </font>
+            </JFXButton>
+            <Label layoutX="668.0" layoutY="12.0" prefHeight="26.0" prefWidth="79.0"
+              text="Card id: " textFill="WHITE">
+              <font>
+                <Font size="18.0"/>
+              </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="12.0" text="Date: " textFill="WHITE">
+              <font>
+                <Font size="18.0"/>
+              </font>
+            </Label>
+            <Label layoutX="282.0" layoutY="12.0" prefHeight="26.0" prefWidth="84.0"
+              text="Location:" textFill="WHITE">
+              <font>
+                <Font size="18.0"/>
+              </font>
+            </Label>
+            <Label layoutX="502.0" layoutY="12.0" text="Status: " textFill="WHITE">
+              <font>
+                <Font size="18.0"/>
+              </font>
+            </Label>
+            <Label fx:id="locationLabel" layoutX="366.0" layoutY="12.0" prefHeight="24.0"
+              prefWidth="130.0" textFill="WHITE">
+              <font>
+                <Font size="18.0"/>
+              </font>
+            </Label>
+            <Label fx:id="dateLabel" layoutX="159.0" layoutY="12.0" prefHeight="26.0"
+              prefWidth="118.0" textFill="WHITE">
+              <font>
+                <Font size="18.0"/>
+              </font>
+            </Label>
+            <Label fx:id="statusLabel" layoutX="567.0" layoutY="12.0" prefHeight="24.0"
+              prefWidth="95.0" textFill="WHITE">
+              <font>
+                <Font size="18.0"/>
+              </font>
+            </Label>
+            <Label fx:id="cardIdLabel" layoutX="756.0" layoutY="12.0" prefHeight="24.0"
+              prefWidth="36.0" textFill="WHITE">
+              <font>
+                <Font size="18.0"/>
+              </font>
+            </Label>
+          </children>
+        </AnchorPane>
+      </bottom>
+      <top>
+        <AnchorPane prefHeight="39.0" prefWidth="600.0" style="-fx-background-color: #2A2E37;"
+          BorderPane.alignment="CENTER">
+          <children>
+            <Label layoutX="373.0" layoutY="8.0" text="MAP" textFill="WHITE">
+              <font>
+                <Font size="24.0"/>
+              </font>
+            </Label>
+          </children>
+        </AnchorPane>
+      </top>
+      <center>
+        <AnchorPane fx:id="mapPane" prefHeight="357.0" prefWidth="505.0"
+          style="-fx-border-color: #ffffff; -fx-background-color: #2A2E37;"
+          BorderPane.alignment="CENTER">
+          <children>
+            <Line endX="130.0" layoutX="352.0" layoutY="273.0" opacity="0.5" rotate="90.0"
+              startX="-100.0" stroke="#ff9000" strokeLineJoin="ROUND" strokeWidth="8.0"/>
+            <Line endX="130.0" layoutX="436.0" layoutY="274.0" opacity="0.5" rotate="90.0"
+              startX="-100.0" stroke="#7bff29" strokeLineJoin="ROUND" strokeWidth="8.0"/>
+            <Line endX="295.0" layoutX="233.0" layoutY="212.0" opacity="0.5" startX="-100.0"
+              stroke="#00f9ff" strokeLineCap="ROUND" strokeMiterLimit="0.0" strokeWidth="8.0"/>
+            <Line endX="130.0" layoutX="245.0" layoutY="274.0" opacity="0.5" rotate="90.0"
+              startX="-100.0" stroke="#71ff1e" strokeLineJoin="ROUND" strokeWidth="8.0"/>
+            <Line endX="90.0" layoutX="362.0" layoutY="391.0" opacity="0.5" startX="-100.0"
+              stroke="#71ff1e" strokeWidth="8.0"/>
+            <Line endX="295.0" layoutX="234.0" layoutY="324.0" opacity="0.5" startX="-100.0"
+              stroke="#ff1b1b" strokeLineCap="ROUND" strokeMiterLimit="0.0" strokeWidth="8.0"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="BUS" layoutX="461.0" layoutY="218.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="BUS" layoutX="187.0" layoutY="218.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="BUS" layoutX="124.0" layoutY="218.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="BUS" layoutX="521.0" layoutY="218.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="BUS" layoutX="272.0" layoutY="218.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="252.0" layoutY="274.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="252.0" layoutY="218.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="442.0" layoutY="166.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="252.0" layoutY="166.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="441.0" layoutY="331.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="252.0" layoutY="397.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="441.0" layoutY="219.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="441.0" layoutY="274.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="441.0" layoutY="398.0"
+              size="20" text=""/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="338.0" layoutY="398.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="BUS" layoutX="358.0" layoutY="397.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="BUS" layoutX="359.0" layoutY="274.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="BUS" layoutX="359.0" layoutY="166.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="BUS" layoutX="359.0" layoutY="218.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="BUS" layoutX="359.0" layoutY="330.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="519.0" layoutY="330.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="338.0" layoutY="331.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="252.0" layoutY="331.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="187.0" layoutY="330.0"
+              size="20"/>
+            <FontAwesomeIconView fill="#ffff8d" glyphName="SUBWAY" layoutX="124.0" layoutY="331.0"
+              size="20"/>
+            <JFXButton fx:id="B1_Station" buttonType="RAISED" layoutX="120.0" layoutY="310.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="B2_Station" buttonType="RAISED" layoutX="183.0" layoutY="310.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="BC1_Station" buttonType="RAISED" layoutX="248.0" layoutY="310.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="BD_Station" buttonType="RAISED" layoutX="334.0" layoutY="310.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="B6_Station" buttonType="RAISED" layoutX="515.0" layoutY="309.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="BD_Stop" buttonType="RAISED" layoutX="355.0" layoutY="310.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="D3_Stop" buttonType="RAISED" layoutX="355.0" layoutY="254.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="AD_Stop" buttonType="RAISED" layoutX="355.0" layoutY="198.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="D1_Stop" buttonType="RAISED" layoutX="355.0" layoutY="146.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="CD_Stop" buttonType="RAISED" layoutX="354.0" layoutY="377.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="C5_Station" buttonType="RAISED" layoutX="248.0" layoutY="376.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="C7_Station" buttonType="RAISED" layoutX="437.0" layoutY="377.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="CD_Station" buttonType="RAISED" layoutX="334.0" layoutY="377.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="C9_Station" buttonType="RAISED" layoutX="437.0" layoutY="253.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="AC2_Station" buttonType="RAISED" layoutX="437.0" layoutY="198.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="BC2_Station" buttonType="RAISED" layoutX="437.0" layoutY="310.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="C11_Station" buttonType="RAISED" layoutX="438.0" layoutY="145.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="C3_Station" buttonType="RAISED" layoutX="248.0" layoutY="253.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="AC1_Station" buttonType="RAISED" layoutX="248.0" layoutY="197.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="C1_Station" buttonType="RAISED" layoutX="248.0" layoutY="145.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="AC1_Stop" buttonType="RAISED" layoutX="268.0" layoutY="198.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="A2_Stop" buttonType="RAISED" layoutX="183.0" layoutY="198.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="AC2_Stop" buttonType="RAISED" layoutX="457.0" layoutY="198.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="A1_Stop" buttonType="RAISED" layoutX="120.0" layoutY="198.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <JFXButton fx:id="A6_Stop" buttonType="RAISED" layoutX="517.0" layoutY="198.0"
+              prefHeight="27.0" prefWidth="19.0" ripplerFill="#ffff8d" text="  "
+              textFill="#40485b"/>
+            <Label layoutX="99.0" layoutY="177.0" text="Line A" textFill="#00f9ff">
+              <font>
+                <Font size="15.0"/>
+              </font>
+            </Label>
+            <Label layoutX="98.0" layoutY="290.0" text="Line B" textFill="#ff1b1b">
+              <font>
+                <Font size="15.0"/>
+              </font>
+            </Label>
+            <Label layoutX="231.0" layoutY="122.0" text="Line C" textFill="#7bff29">
+              <font>
+                <Font size="15.0"/>
+              </font>
+            </Label>
+            <Label layoutX="338.0" layoutY="122.0" text="Line D" textFill="#ff9000">
+              <font>
+                <Font size="15.0"/>
+              </font>
+            </Label>
+            <JFXButton layoutX="578.0" layoutY="339.0" onMouseClicked="#clickTapOut"
+              prefHeight="42.0" prefWidth="198.0" style="-fx-border-color: #FFFF8D;"
+              stylesheets="@Main.css" text="Tap out" textFill="WHITE">
+              <font>
+                <Font size="15.0"/>
+              </font>
+            </JFXButton>
+            <JFXButton layoutX="578.0" layoutY="279.0" onMouseClicked="#clickTapIn"
+              prefHeight="42.0" prefWidth="198.0" style="-fx-border-color: #FFFF8D;"
+              stylesheets="@Main.css" text="Tap in" textFill="WHITE">
+              <font>
+                <Font size="15.0"/>
+              </font>
+            </JFXButton>
+            <JFXButton layoutX="578.0" layoutY="220.0" onMouseClicked="#clickTopUp"
+              prefHeight="42.0" prefWidth="198.0" style="-fx-border-color: #FFFF8D;"
+              stylesheets="@Main.css" text="Top up" textFill="WHITE">
+              <font>
+                <Font size="15.0"/>
+              </font>
+            </JFXButton>
+            <JFXButton layoutX="578.0" layoutY="162.0" onMouseClicked="#clickCheckBalance"
+              prefHeight="42.0" prefWidth="198.0" style="-fx-border-color: #FFFF8D;"
+              stylesheets="@Main.css" text="Check Balance" textFill="WHITE">
+              <font>
+                <Font size="15.0"/>
+              </font>
+            </JFXButton>
+          </children>
+        </AnchorPane>
+      </center>
+    </BorderPane>
+  </children>
+</StackPane>

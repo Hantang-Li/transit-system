@@ -1,0 +1,19 @@
+* {
+  -fx-primary: #2A2E37;
+  -fx-secondary: #FFFF8D;
+}
+
+.button {
+  -fx-text-fill: -fx-primarytext;
+  -fx-background-color: -fx-primary;
+}
+
+.button:hover, .button:focused {
+  -fx-border-color: -fx-secondary;
+  -fx-background-color: -fx-secondary;
+  -fx-text-fill: -fx-primary;
+}
+
+.glyph-icon:hover {
+  -fx-fill: -fx-primarytext;
+}

@@ -1,0 +1,4 @@
+Bus line: A1, A2, AC1, AD, AC2, A6
+Subway line: B1, B2, BC1, BD, BC2, B6
+Subway line: C1, AC1, C3, BC1, C5, CD, C7, BC2, C9, AC2, C11
+Bus line: D1, AD, D3, BD, CD
