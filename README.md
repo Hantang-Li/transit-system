@@ -2,7 +2,7 @@
 
 CSC207 course project
 
-An transit card system, people are able to tap in and tap out in given stations.
+A transit card system built by Java, under a graphical interface, people are able to tap in and tap out at given stations. The system is able to compute the cost. More like a travel game.
 
 Main java file is at transit-system/src/application/Main.java
 
