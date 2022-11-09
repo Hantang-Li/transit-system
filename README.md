@@ -1,6 +1,6 @@
 # transit-system
 
-An object-oriented transit system built by Java, able to configure station maps, store customer information, calculate fares based on the location and time that a user tapped in and tapped out on a station and make logs. The project received a near-perfect score due to its fault tolerance.
+An object-oriented transit system built by Java, able to configure station maps, store customer information, calculate fares based on the location and time that a user tapped in and tapped out on a station, and make logs. The project received a near-perfect score due to its fault tolerance.
 
 Main java file is at transit-system/src/application/Main.java
 
