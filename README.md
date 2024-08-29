@@ -6,6 +6,9 @@ The main java file is at transit-system/src/application/Main.java
 
 Made by: Hantang Li(https://github.com/Hantang-Li), Liang Kaiqu (https://github.com/kevinliang888), Hongyu Ao(https://github.com/aohongyu), Yifan Bai
 
+Hongyu Ao packed the app and you can visit here:
+https://github.com/aohongyu/transitSystem/releases/tag/V1.0
+
 ## Getting Started
 When checking the code, you may find some “Cannot resolve” symbols, that’s because you haven’t
 imported the external libraries we used. The path of external libraries is: /transitSystem/libs
